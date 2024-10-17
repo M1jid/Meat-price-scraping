@@ -1,45 +1,67 @@
-Meat-price-scraping
-This project aims to collect real-time meat prices from multiple trusted websites and store the data in a structured Excel file. The system is built with Python, leveraging powerful libraries for web scraping, data processing, and visualization.
+🥩 Meat-price-scraping 🥩
+Project Overview 🌍
+Meat-price-scraping is an online system that collects real-time meat prices from multiple trusted websites and displays them in a sleek, user-friendly web application. Built using Streamlit, SQLite, and Python, this project combines web scraping, data processing, and visualization for optimal performance and usability.
 
-پروژه سامانه آنلاین قیمت گوشت
-این پروژه یک اپلیکیشن وب با استفاده از Streamlit است که قیمت‌های روز گوشت گوسفند و گوساله را از چندین سایت معتبر دریافت کرده و در یک پایگاه داده SQLite ذخیره می‌کند. سپس اطلاعات ذخیره شده به صورت جدول در اپلیکیشن نمایش داده می‌شود.
+Features 🌟
+Fetching Prices from Multiple Sources 🔍: Prices are collected from trusted websites like mrghasab.com, zaffar.ir, and ehsanstore.org. 🛒
 
-ویژگی‌ها
-دریافت قیمت‌ها از منابع مختلف: قیمت‌ها از سایت‌های مختلفی مانند mrghasab.com، zaffar.ir و ehsanstore.org دریافت می‌شود.
-ذخیره‌سازی در پایگاه داده SQLite: تمامی اطلاعات قیمت به‌طور خودکار در یک پایگاه داده SQLite ذخیره می‌شود، که امکان دسترسی سریع به داده‌ها و گزارش‌گیری آسان را فراهم می‌کند.
-نمایش قیمت‌ها: قیمت‌ها به صورت جدول در اپلیکیشن نمایش داده می‌شوند، به همراه امکان فیلتر کردن و جستجو.
-به‌روزرسانی قیمت‌ها: کاربران می‌توانند با فشار دادن دکمه "به‌روزرسانی قیمت‌ها"، اطلاعات قیمت‌ها را به‌روز کرده و تغییرات را بلافاصله مشاهده کنند.
-گزارش‌گیری و ذخیره‌سازی در Excel: داده‌ها به‌طور خودکار در قالب فایل Excel ذخیره می‌شوند و امکان تجزیه و تحلیل داده‌ها در نرم‌افزارهایی مثل Excel فراهم می‌شود.
-نحوه کارکرد
-دریافت قیمت‌ها: اطلاعات قیمت گوشت از سایت‌های معتبر و مورد اعتماد به‌طور منظم جمع‌آوری می‌شود.
-ذخیره‌سازی اطلاعات: پس از دریافت داده‌ها، آن‌ها در پایگاه داده SQLite ذخیره می‌شوند تا در هر لحظه بتوان به آن‌ها دسترسی داشت.
-نمایش و به‌روزرسانی: با کلیک روی دکمه "به‌روزرسانی قیمت‌ها"، داده‌ها به‌روزرسانی می‌شوند و جدول قیمت‌ها در اپلیکیشن به روز می‌شود.
-نیازمندی‌ها
-برای اجرای این پروژه، نیاز به نصب کتابخانه‌های زیر دارید:
+SQLite Database Storage 💾: All prices are stored in an SQLite database, ensuring fast and efficient access to data. Query and analyze data easily! 📊
 
-streamlit: برای ساخت اپلیکیشن وب.
-requests: برای ارسال درخواست‌های HTTP به سایت‌ها و دریافت داده‌ها.
-beautifulsoup4: برای استخراج داده‌های HTML از صفحات وب.
-sqlite3: برای ذخیره‌سازی داده‌ها در پایگاه داده SQLite.
-pandas: برای مدیریت داده‌ها و انجام عملیات بر روی آن‌ها.
-plotly: برای رسم نمودارها و نمایش اطلاعات به‌صورت گرافیکی.
-برای نصب این کتابخانه‌ها از دستور زیر استفاده کنید:
+Displaying Prices in a Table 📈: Prices are displayed in an interactive table with filtering and searching options. 🧑‍💻
 
+Real-time Updates 🔄: Users can click on the "Update Prices" button to refresh the data in real-time. 📲
+
+Exporting Data to Excel 🗂️: Easily export collected data to an Excel file for further analysis or reporting. 📑
+
+How It Works ⚙️
+Fetching Prices: The system scrapes real-time meat prices from trusted websites on a regular basis. 🏷️
+Storing Data: Collected data is stored in an SQLite database for fast retrieval. 🔄
+Displaying and Updating: The user can click on "Update Prices" to refresh the data and see live changes on the table. 👀
+Requirements 📦
+Before running the project, install the following libraries:
+
+streamlit – To build and run the web application.
+requests – For making HTTP requests and scraping data.
+beautifulsoup4 – For scraping HTML data from websites.
+sqlite3 – For database storage.
+pandas – For data manipulation and processing.
+plotly – For creating interactive visualizations.
+
+
+Use the following command to install them:
 ```bash
 pip install streamlit requests beautifulsoup4 pandas plotly
 ```
-نحوه استفاده
-ابتدا، اسکریپت را اجرا کنید:
+
+
+How to Use 🚀
+Run the Streamlit Application: Start by running the following command in your terminal:
+
 ```bash
 streamlit run app.py
 ```
-پس از بارگذاری اپلیکیشن، صفحه‌ای با جدول قیمت‌ها نمایش داده می‌شود.
-شما می‌توانید با کلیک بر روی دکمه "به‌روزرسانی قیمت‌ها"، قیمت‌های جدید را دریافت کرده و در جدول مشاهده کنید.
-قیمت‌ها به‌طور خودکار در پایگاه داده SQLite ذخیره می‌شوند، و همچنین می‌توانید این اطلاعات را در قالب یک فایل Excel استخراج کنید.
-فایل‌های پروژه
-database.py: فایل مربوط به مدیریت پایگاه داده SQLite.
-scraper.py: اسکریپت مربوط به جمع‌آوری داده‌ها از سایت‌های مختلف.
-گام‌های توسعه آینده
-افزودن قابلیت نمودارهای گرافیکی: برای نمایش تغییرات قیمت گوشت در بازه‌های زمانی مختلف.
-توسعه تحلیل‌های آماری: ارائه تحلیل‌هایی مانند میانگین قیمت، بیشترین تغییرات قیمتی، و غیره.
-پشتیبانی از منابع جدید: امکان اضافه کردن سایت‌های جدید برای دریافت قیمت‌ها.
+
+Interact with the Application:
+
+Once the app loads, you'll see a table displaying current meat prices.
+Click on the "Update Prices" button to fetch the latest data from the websites.
+The app will refresh the table with the updated prices and store them in the SQLite database.
+You can also export the data to an Excel file for further analysis.
+
+
+Project Structure 📂
+database.py: Handles SQLite database management (data storage and retrieval). 💾
+scraper.py: The script for scraping data from various websites. 🔧
+
+
+Future Development Steps 🚧
+Add Graphs 📊: For visualizing the trends in meat prices over time.
+Statistical Analysis 📉: Implement analysis such as average prices, highest price changes, and more.
+Support More Sources 🌐: Expand the list of trusted websites for fetching prices.
+
+
+License 📝
+This project is licensed under the MIT License.
+
+Contributing 🤝
+If you'd like to contribute to this project, feel free to fork the repository and submit pull requests! Please make sure to follow the code style and write meaningful commit messages.
