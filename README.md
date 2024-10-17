@@ -75,7 +75,7 @@ The app will refresh the table with the updated prices and store them in the SQL
 You can also export the data to an Excel file for further analysis.
 
 
-## **Project Structure ** 📂
+## **Project Structure** 📂
 database.py: Handles SQLite database management (data storage and retrieval). 💾
 scraper.py: The script for scraping data from various websites. 🔧
 
