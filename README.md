@@ -75,21 +75,21 @@ The app will refresh the table with the updated prices and store them in the SQL
 You can also export the data to an Excel file for further analysis.
 
 
-##Project Structure 📂
+## **Project Structure ** 📂
 database.py: Handles SQLite database management (data storage and retrieval). 💾
 scraper.py: The script for scraping data from various websites. 🔧
 
 
-##Future Development Steps 🚧
+## **Future Development Steps** 🚧
 Add Graphs 📊: For visualizing the trends in meat prices over time.
 Statistical Analysis 📉: Implement analysis such as average prices, highest price changes, and more.
 Support More Sources 🌐: Expand the list of trusted websites for fetching prices.
 
 
-##License 📝
+## **License** 📝
 This project is licensed under the MIT License.
 
-##Contributing 🤝
+## **Contributing** 🤝
 If you'd like to contribute to this project, feel free to fork the repository and submit pull requests! Please make sure to follow the code style and write meaningful commit messages.
 
 
