@@ -1,6 +1,10 @@
 🥩 Meat-price-scraping 🥩
+
+
 Project Overview 🌍
 Meat-price-scraping is an online system that collects real-time meat prices from multiple trusted websites and displays them in a sleek, user-friendly web application. Built using Streamlit, SQLite, and Python, this project combines web scraping, data processing, and visualization for optimal performance and usability.
+
+
 
 Features 🌟
 Fetching Prices from Multiple Sources 🔍: Prices are collected from trusted websites like mrghasab.com, zaffar.ir, and ehsanstore.org. 🛒
